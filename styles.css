@@ -1,0 +1,70 @@
+.background-fade {
+    background-color: rgba(9, 244, 216, 0.4);
+}
+
+h1 {
+    background-color: rgba(208, 243, 9, 0.939);
+    color: white;
+}
+
+button:hover {
+    background-color: rgba(243, 107, 9, 0.939);
+    /* background-color: rgba(9, 241, 9, 0.8); */
+}
+
+a:hover {
+    background-color: rgba(243, 9, 204, 0.939);
+}
+
+.animated-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    transition: transform 0.2s ease;
+  }
+  
+  @keyframes increaseSize {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(5.1);
+    }
+    100% {
+      transform: scale(8)
+    }
+  }
+  
+  .animated-button.clicked {
+    animation: increaseSize 0.2s ease;
+  }
+  
+  .icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    padding: 100px 23px 567px 28px;
+    margin: 200px 123px;
+  }
+  
+  .rotating-icon {
+    width: 100px;
+    height: 100px;
+    animation: rotate 2s linear infinite;
+    padding: 900px 26px 789px 12px;
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
